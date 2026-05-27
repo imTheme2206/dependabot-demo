@@ -5,11 +5,24 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
   - package-ecosystem: npm
     directory: "/javascript"
     schedule:
       interval: "weekly"
+    groups:
+      npm-admin:
+        patterns:
+          - "*"
+        group-by: dependency-name
   - package-ecosystem: bundler
     directory: "/ruby"
     schedule:
       interval: "weekly"
+    groups:
+      ruby:
+        patterns:
+          - "*"
