@@ -17,7 +17,6 @@ updates:
       npm-admin:
         patterns:
           - "*"
-        group-by: dependency-name
   - package-ecosystem: bundler
     directory: "/ruby"
     schedule:
